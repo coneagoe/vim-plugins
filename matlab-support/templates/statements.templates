@@ -9,15 +9,15 @@
 == Statements.for == below, map:sf, sc:f ==
 for i = <CURSOR>
     <SPLIT>{-LOOP_BODY-}
-end
+end % -------------------- end of for ------------------------------
 == Statements.for, vector == below, map:sv, sc:v ==
 for i = 1:length ( <CURSOR> )
     <SPLIT>{-LOOP_BODY-}
-end
+end % -------------------- end of for ------------------------------
 == Statements.while == below, map:sw, sc:w ==
 while <CURSOR>
     <SPLIT>{-LOOP_BODY-}
-end
+end % -------------------- end of while ----------------------------
 == ENDTEMPLATE ==
 
 § -------------------------------------------------------------
@@ -29,19 +29,20 @@ end
 == Statements.if, end == below, map:sif, sc:i ==
 if <CURSOR> 
     <SPLIT>{-IF_PART-}
-end
+end % -------------------- end of if -------------------------------
 == Statements.if, else == below, map:sie, sc:i ==
 if <CURSOR> 
     <SPLIT>{-IF_PART-}
 else
     {+ELSE_PART+}
-end
+end % -------------------- end of else -----------------------------
 == Statements.elseif == below, map:sei, sc:e ==
 elseif <CURSOR>
     {+ELSEIF_PART+}
 == Statements.else == below, map:sel, sc:e ==
 else
     <CURSOR>
+end % -------------------- end of else -----------------------------
 == ENDTEMPLATE ==
 
 § -------------------------------------------------------------

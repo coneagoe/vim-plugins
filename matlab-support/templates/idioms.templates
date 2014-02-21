@@ -60,12 +60,12 @@ end
 
 == Idioms.primary function == start, map:ip, sc:p ==
 function <CURSOR> = |BASENAME| ( {+ARGUMENTS+} )
-    <SPLIT>{-FUNCTION_BODY-}
-end
+    <SPLIT>
+end % -------------------- end of function |BASENAME| -------------------------------
 == Idioms.function == below, map:if, sc:f ==
-function <CURSOR> = |?FUNCTION_NAME| ( {+ARGUMENTS+} )
-    <SPLIT>{-FUNCTION_BODY-}
-end
+function [<CURSOR>] = |?FUNCTION_NAME| ( ARGUMENTS_I )
+    <SPLIT>
+end % -------------------- end of function |FUNCTION_NAME| ----------------------------
 == ENDTEMPLATE ==
 
 SetPath( 'matlab_path', './' )

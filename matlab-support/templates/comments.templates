@@ -12,9 +12,20 @@ MenuShortcut( 'Comments.Lists', 'l' )
 
 == Comments.end-of-line comment == append, nomenu ==
 % <CURSOR>
+
+== ENDTEMPLATE ==
+
+== Comments.frame == map:cfr ==
+%-------------------------------------------------------------------------------
+%  <CURSOR>
+%-------------------------------------------------------------------------------
+
+== ENDTEMPLATE ==
+
 == Comments.file description == start, map:cfi, sc:f ==
-%|BASENAME:u| <CURSOR>.
-%   {+DETAILS+}
+%-------------------------------------------------------------------------------
+%   |BASENAME:u| <CURSOR>.
+%   Brief:
 %
 %   Parameters: -|PARAMETERS:EMPTY|
 %   Parameters: |PARAMETERS:FIRST| - {+DESCRIPTION+}. ({+TYPE+})
@@ -24,10 +35,14 @@ MenuShortcut( 'Comments.Lists', 'l' )
 %               |RETURNS:ENTRY| - {+DESCRIPTION+}. ({+TYPE+})
 %
 %   See also: TODO
+%-------------------------------------------------------------------------------
+
+== ENDTEMPLATE ==
 
 == Comments.function description == below, map:cfu, sc:f ==
-%|?FUNCTION_NAME:u| <CURSOR>.
-%   {+DETAILS+}
+%-------------------------------------------------------------------------------
+%   |?FUNCTION_NAME:u| <CURSOR>.
+%   Brief:
 %
 %   Parameters: -|PARAMETERS:EMPTY|
 %   Parameters: |PARAMETERS:FIRST| - {+DESCRIPTION+}. ({+TYPE+})
@@ -35,8 +50,15 @@ MenuShortcut( 'Comments.Lists', 'l' )
 %   Returns:    -|RETURNS:EMPTY|
 %   Returns:    |RETURNS:FIRST| - {+DESCRIPTION+}. ({+TYPE+})
 %               |RETURNS:ENTRY| - {+DESCRIPTION+}. ({+TYPE+})
+%-------------------------------------------------------------------------------
+
+== ENDTEMPLATE ==
+
 == Comments.parameter description == below, map:cpa, sc:p ==
+%-------------------------------------------------------------------------------
 %               <CURSOR> - {+DESCRIPTION+}. ({+TYPE+})
+%-------------------------------------------------------------------------------
+
 == ENDTEMPLATE ==
 
 § -------------------------------------------------------------
